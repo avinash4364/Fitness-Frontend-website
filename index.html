@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fitness: Unlock Your Physical Potential</title>
+  </head>
+  <body>
+    <header class="nav-header container">
+      <a href="#"
+        ><h1 class="logo-heading">fit<span>ness</span></h1></a
+      >
+
+      <nav class="menu">
+        <ul class="menu-links">
+          <li class="menu-link menu-link--highlight"><a href="#">home</a></li>
+          <li class="menu-link menu-link--classes">
+            <a class="sub-menu-link" href="#"
+              >classes <span class="down">&#8964;</span></a
+            >
+            <div class="sub-menu">
+              <ul>
+                <li class="menu-link"><a href="#">Strength training</a></li>
+                <li class="menu-link"><a href="#">Weightlifting</a></li>
+                <li class="menu-link"><a href="#">Calesthenics</a></li>
+                <li class="menu-link"><a href="#">Circuit training</a></li>
+              </ul>
+            </div>
+            <!-- here the filter of the svg will be used to round the corners of our submenu by applying it to its parent container -->
+            <svg
+              style="visibility: hidden; position: absolute"
+              width="0"
+              height="0"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+            >
+              <defs>
+                <filter id="round">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="2"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo"
+                  ></feColorMatrix>
+                  <feComposite
+                    in="SourceGraphic"
+                    in2="goo"
+                    operator="atop"
+                  ></feComposite>
+                </filter>
+              </defs>
+            </svg>
+          </li>
+          <li class="menu-link"><a href="#">schedule</a></li>
+          <li class="menu-link"><a href="#">trainers</a></li>
+          <li class="menu-link"><a href="#">about</a></li>
+          <li class="menu-link"><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero">
+        <div class="bg-img"></div>
+        <div class="container">
+          <header class="hero-header">
+            <p class="hero-title">
+              Fitness & Health is a <span class="highlight">Mentality</span>
+            </p>
+            <a href="#" class="cta-btn hero-btn">start your journey</a>
+          </header>
+        </div>
+      </section>
+
+      <!-- schedule section -->
+      <section class="schedule">
+        <div class="container schedule-container">
+          <h2 class="heading-secondary schedule-title">class schedule</h2>
+          <p class="heading-desc schedule-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            laborum neque ex totam, libero ipsum, nesciunt quaerat officiis id
+            ab magnam blanditiis corrupti, sunt vitae ipsa dolores corporis
+            explicabo debitis.
+          </p>
+          <div class="days">
+            <ul class="day-list">
+              <li class="day">
+                <button class="day-btn b1 clicked">Monday</button>
+              </li>
+              <li class="day"><button class="day-btn b2">Tuesday</button></li>
+              <li class="day"><button class="day-btn b3">Wednesday</button></li>
+              <li class="day"><button class="day-btn b4">Thursday</button></li>
+              <li class="day"><button class="day-btn b5">Friday</button></li>
+              <li class="day"><button class="day-btn b6">Saturday</button></li>
+              <li class="day"><button class="day-btn b7">Sunday</button></li>
+            </ul>
+          </div>
+          <div class="programs grid selected monday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+          </div>
+          <div class="programs grid tuesday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+          </div>
+          <div class="programs grid wednesday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+          </div>
+          <div class="programs grid thursday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+          </div>
+          <div class="programs grid friday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+          </div>
+          <div class="programs grid saturday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+          </div>
+          <div class="programs grid sunday-programs">
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-dumbell.svg"
+                  alt="a man lifting a dumbell"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">Body Building</p>
+              <p class="program-instructor">john doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-yoga.svg" alt="a man in yoga position" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">yoga programs</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img src="assets/fit-cycling.svg" alt="a man cycling" />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">cycling program</p>
+              <p class="program-instructor">rita doe</p>
+            </div>
+            <div class="program">
+              <div class="program-img">
+                <img
+                  src="assets/fit-boxing.svg"
+                  alt="a pair of boxing gloves"
+                />
+              </div>
+              <p class="program-time">06am&nbsp;-&nbsp;7am</p>
+              <p class="program-title">boxing fitness</p>
+              <p class="program-instructor">james smith</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- background image -->
+      <figure class="bg-overlay">
+        <div class="bg-img bg-img-2"></div>
+      </figure>
+
+      <!-- programs & training section -->
+      <section class="trainings">
+        <div class="container trainings-grid">
+          <h2 class="heading-secondary full-col">our programs</h2>
+          <p class="heading-desc full-col trainings-desc">
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+          <div class="training">
+            <div class="training-img">
+              <img src="assets/fit-dumbell.svg" alt="a man lifting a dumbell" />
+            </div>
+            <span class="training-name">body combat</span>
+            <p class="training-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+              odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+          <div class="training">
+            <div class="training-img">
+              <img
+                src="assets/fit-yoga.svg"
+                alt="a man sitting in yoga position"
+              />
+            </div>
+            <span class="training-name">yoga programs</span>
+            <p class="training-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+          <div class="training">
+            <div class="training-img">
+              <img src="assets/fit-cycling.svg" alt="a man  on the bicycle" />
+            </div>
+            <span class="training-name">cycling program</span>
+            <p class="training-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum,
+              odit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+          <div class="training">
+            <div class="training-img">
+              <img src="assets/fit-boxing.svg" alt="a pair of boxing gloves" />
+            </div>
+            <span class="training-name">boxing fitness</span>
+            <p class="training-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Explicabo, laborum. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+          <div class="training">
+            <div class="training-img">
+              <img src="assets/fit-swimming.svg" alt="a man swimming" />
+            </div>
+            <span class="training-name">swimming program</span>
+            <p class="training-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
+              eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+          <div class="training">
+            <div class="training-img">
+              <img src="assets/fit-massage.svg" alt="a man getting massaged" />
+            </div>
+            <span class="training-name">massage</span>
+            <p class="training-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, accusantium?
+            </p>
+            <a href="" class="cta-btn training-btn">join now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- trainers gallery section -->
+      <section class="gallery">
+        <div class="container gallery-grid">
+          <h2 class="heading-secondary full-col gallery-heading">
+            meet our trainers
+          </h2>
+          <p class="heading-desc full-col gallery-desc">
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/home-image.jpg" alt="bodybuilder lifting weights" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">John Doe</h3>
+              <span class="trainer-program">Body Trainer</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+                rerum, culpa delectus quod magnam earum?
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/home-image-3.jpg" alt="" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">james smith</h3>
+              <span class="trainer-program">swimming trainer</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                officiis libero magni quod voluptas corrupti.
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/home-image-4.jpg" alt="" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">rita doe</h3>
+              <span class="trainer-program">Yoga Trainer</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                dolorem tempore maiores fugiat eligendi corporis.
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/trainer-4.jpg" alt="" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">Dave Johnson</h3>
+              <span class="trainer-program">boxing trainer</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                quia nostrum at, dicta sint qui?
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/home-image-5.jpg" alt="" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">Rachelle garner</h3>
+              <span class="trainer-program">cheif executive officer</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                similique eum, consequuntur animi nemo quas!
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <div class="trainer-img">
+              <img src="img/trainer-6.jpg" alt="" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">Lana and Steven hill</h3>
+              <span class="trainer-program">cycling program trainers</span>
+              <p class="trainer-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                aspernatur perspiciatis voluptates omnis aliquam minus.
+              </p>
+              <ul class="trainer-social-list">
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li class="trainer-social">
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA section -->
+      <section class="cta">
+        <div class="bg-img"></div>
+        <div class="container">
+          <div class="cta-container">
+            <h2 class="cta-heading">Fitness Classes this Summer</h2>
+            <p class="cta-text">Pay now and get 25% Discount</p>
+            <a href="#" class="mem-btn cta-btn">become a member</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- pricing and features section -->
+      <section class="pricing">
+        <div class="container">
+          <h2 class="heading-secondary pricing-heading">pricing plan</h2>
+          <p class="heading-desc pricing-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            saepe nam vitae inventore illo ipsum maiores pariatur molestiae?
+            Eligendi modi eos illo consequatur reprehenderit accusantium atque
+            aliquid repellat doloremque quo?
+          </p>
+          <div class="pricing-plans">
+            <div class="pricing-plan">
+              <span class="plan-name">starter</span>
+              <p class="plan-price"><span class="price">9</span>/month</p>
+              <p class="plan-desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda similique numquam, libero est
+              </p>
+              <ul class="exercise-list">
+                <li class="exercise">15 cardio lessons</li>
+                <li class="exercise">10 swimming lessons</li>
+                <li class="exercise">10 yoga lessons</li>
+                <li class="exercise">20 aerobic exercises</li>
+                <li class="exercise">10 zumba classes</li>
+                <li class="exercise">5 massage</li>
+                <li class="exercise">10 body Building</li>
+              </ul>
+              <a href="" class="cta-btn pricing-btn">select plan</a>
+            </div>
+            <div class="pricing-plan">
+              <span class="plan-name">basic</span>
+              <p class="plan-price"><span class="price">27</span>/month</p>
+              <p class="plan-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                praesentium, temporibus dignissimos ea esse autem.
+              </p>
+              <ul class="exercise-list">
+                <li class="exercise">15 cardio lessons</li>
+                <li class="exercise">10 swimming lessons</li>
+                <li class="exercise">10 yoga lessons</li>
+                <li class="exercise">20 aerobic exercises</li>
+                <li class="exercise">10 zumba classes</li>
+                <li class="exercise">5 massage</li>
+                <li class="exercise">10 body Building</li>
+              </ul>
+              <a href="" class="cta-btn pricing-btn">select plan</a>
+            </div>
+            <div class="pricing-plan">
+              <span class="plan-name">pro</span>
+              <p class="plan-price"><span class="price">74</span>/month</p>
+              <p class="plan-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                possimus eligendi aperiam sint. Non, ipsa.
+              </p>
+              <ul class="exercise-list">
+                <li class="exercise">15 cardio lessons</li>
+                <li class="exercise">10 swimming lessons</li>
+                <li class="exercise">10 yoga lessons</li>
+                <li class="exercise">20 aerobic exercises</li>
+                <li class="exercise">10 zumba classes</li>
+                <li class="exercise">5 massage</li>
+                <li class="exercise">10 body Building</li>
+              </ul>
+              <a href="" class="cta-btn pricing-btn">select plan</a>
+            </div>
+            <div class="pricing-plan">
+              <span class="plan-name">unlimited</span>
+              <p class="plan-price"><span class="price">140</span>/month</p>
+              <p class="plan-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda deserunt numquam dolore ad unde
+              </p>
+              <ul class="exercise-list">
+                <li class="exercise">15 cardio lessons</li>
+                <li class="exercise">10 swimming lessons</li>
+                <li class="exercise">10 yoga lessons</li>
+                <li class="exercise">20 aerobic exercises</li>
+                <li class="exercise">10 zumba classes</li>
+                <li class="exercise">5 massage</li>
+                <li class="exercise">10 body Building</li>
+              </ul>
+              <a href="" class="cta-btn pricing-btn">select plan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog section -->
+      <section class="blog">
+        <article class="container blog-grid">
+          <h2 class="heading-secondary blog-heading">recent from blog</h2>
+          <div class="post">
+            <div class="post-img">
+              <img src="/img/blog-1.jpg" alt="people running in a marathon" />
+            </div>
+            <div class="post-desc">
+              <a href="#">
+                <p class="post-title">
+                  Starting a new session of marathon training this summer.
+                </p></a
+              >
+              <div class="post-footer">
+                <span class="posted-by">Posted by &colon; Admin</span
+                ><a href="#" class="post-comment"
+                  ><span>15</span>
+                  <ion-icon
+                    class="comment-icon"
+                    name="chatbubble-ellipses-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, magnam!
+              </p>
+              <a href="#" class="cta-btn post-btn">read more</a>
+            </div>
+            <div class="post-img">
+              <img src="/img/blog-1.jpg" alt="people running in a marathon" />
+            </div>
+            <div class="post-desc">
+              <a href="#">
+                <p class="post-title">
+                  Starting a new session of marathon training this summer.
+                </p></a
+              >
+              <div class="post-footer">
+                <span class="posted-by">Posted by&colon; Admin</span
+                ><a href="#" class="post-comment"
+                  ><span>15</span>
+                  <ion-icon
+                    class="comment-icon"
+                    name="chatbubble-ellipses-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, magnam!
+              </p>
+              <a href="#" class="cta-btn post-btn">read more</a>
+            </div>
+          </div>
+          <h2 class="heading-secondary blog-heading">upcoming events</h2>
+          <div class="post events-post">
+            <div class="post-date">
+              <span class="date">13</span><span class="month">May</span
+              ><span class="year">2023</span>
+            </div>
+            <div class="post-desc">
+              <a href="#">
+                <p class="post-title">
+                  Starting a new session of marathon training this summer.
+                </p></a
+              >
+              <div class="post-footer">
+                <span class="posted-by">Posted by &colon; Admin</span
+                ><a href="#" class="post-comment"
+                  ><span>15</span>
+                  <ion-icon
+                    class="comment-icon"
+                    name="chatbubble-ellipses-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, magnam!
+              </p>
+              <a href="#" class="cta-btn post-btn">read more</a>
+            </div>
+
+            <div class="post-date">
+              <span class="date">15</span><span class="month">May</span
+              ><span class="year">2023</span>
+            </div>
+            <div class="post-desc">
+              <a href="#">
+                <p class="post-title">
+                  Starting a new session of marathon training this summer.
+                </p></a
+              >
+              <div class="post-footer">
+                <span class="posted-by">Posted by&colon; Admin</span
+                ><a href="#" class="post-comment"
+                  ><span>15</span>
+                  <ion-icon
+                    class="comment-icon"
+                    name="chatbubble-ellipses-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, magnam!
+              </p>
+              <a href="#" class="cta-btn post-btn">read more</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="about">
+          <h3 class="heading-tertiary">about us</h3>
+          <p class="about-text">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics.
+          </p>
+        </div>
+        <div class="address">
+          <h3 class="heading-tertiary">our address</h3>
+          <ul class="contact-details">
+            <li class="contact-list address">
+              <ion-icon name="location-outline"></ion-icon>
+              <address>Palam, New Delhi, Delhi - 110040</address>
+            </li>
+            <li class="contact-list phone">
+              <ion-icon name="phone-portrait-outline"></ion-icon
+              ><a href="tel:+91 9923344556">9923344556</a>
+            </li>
+            <li class="contact-list mail">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+            </li>
+
+            <li class="contact-list website">
+              <ion-icon name="globe-outline"></ion-icon
+              ><a href="#">www.mysite.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-me">
+          <h3 class="heading-tertiary">drop us a line</h3>
+          <form action="#" class="form">
+            <input type="text" placeholder="Name" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="send message" />
+          </form>
+        </div>
+      </div>
+      <div class="container social-container">
+        <ul class="social-list">
+          <li class="social">
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li class="social">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li class="social">
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li class="social">
+            <a href="#"><ion-icon name="globe-outline"></ion-icon></a>
+          </li>
+          <li class="social">
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+        </ul>
+        <div class="credit">
+          <p>copyright &copy; 2023. all rights reserved</p>
+          <p>
+            all the demo images were from &colon;
+            <a href="https://unsplash.com/">unsplash</a>
+          </p>
+          <p>
+            most of the icons used are from &colon;
+            <a href="https:// ionic.io/ionicons"> ionicons</a>
+          </p>
+          <p>
+            the inspiration for the website design is from &colon;
+            <a href="https://demos.freehtml5.co/fitness/#">Freehtml5.co</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- using ionicons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
