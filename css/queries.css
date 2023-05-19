@@ -1,1 +1,243 @@
 /* this css will add responsiveness to our website */
+
+/* 
+for smaller desktops - below 1280px
+*/
+
+@media (max-width: 80em) {
+  /* .hero {
+    height: 60vh;
+  } */
+
+  section {
+    padding: 8rem 0;
+  }
+
+  .hero .bg-img {
+    background-position-y: -10rem;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  .trainer-name {
+    font-size: 2.4rem;
+  }
+
+  .trainer-program {
+    font-size: 1.8rem;
+  }
+
+  .trainer-social ion-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .cta {
+    height: 45rem;
+  }
+
+  .cta .bg-img {
+    background-position-x: right;
+  }
+
+  .cta-heading {
+    font-size: 6.2rem;
+  }
+
+  .program-title {
+    font-size: 2rem;
+  }
+
+  .bg-img-2::after {
+    font-size: 6.2rem;
+  }
+
+  .trainings-desc {
+    padding-bottom: 6.4rem;
+  }
+
+  .gallery-img img {
+    height: 45rem;
+  }
+
+  .gallery-desc {
+    padding-bottom: 3.2rem;
+  }
+
+  .plan-desc {
+    font-size: 1.6rem;
+  }
+
+  .exercise-list {
+    font-size: 1.6rem;
+  }
+
+  .plan-price .price {
+    font-size: 5.2rem;
+  }
+
+  .blog-heading {
+    font-size: 3rem;
+  }
+
+  .hero-header {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .training-img img {
+    width: 5.2rem;
+  }
+
+  .mem-btn:link,
+  .mem-btn:visited {
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+/* 
+for landscape tablets - below 1080px    
+*/
+
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 90rem;
+  }
+
+  .training-desc {
+    font-size: 1.4rem;
+  }
+
+  .program-title {
+    font-size: 1.8rem;
+  }
+
+  .bg-overlay {
+    height: 45rem;
+  }
+
+  .bg-img-2 {
+    background-position-y: -10rem;
+  }
+
+  .cta-heading {
+    font-size: 5.2rem;
+  }
+
+  .cta .bg-img {
+    background-position-y: center;
+  }
+
+  .pricing-plans {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 9.6rem;
+    gap: 4.8rem;
+  }
+
+  .post {
+    grid-template-columns: auto 1fr;
+  }
+
+  .post-img {
+    width: 10rem;
+  }
+
+  .gallery-img img {
+    height: 40rem;
+  }
+
+  .training .training-btn:link,
+  .training .training-btn:visited {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .trainer-social ion-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 1rem;
+  }
+
+  .trainer-name {
+    font-size: 2rem;
+  }
+
+  .trainer-program {
+    font-size: 1.6rem;
+  }
+
+  .trainer-desc {
+    font-size: 1.4rem;
+  }
+
+  .hero-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .day-list {
+    column-gap: 2.4rem;
+  }
+
+  .day-btn {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .hero {
+    padding-top: 9.6rem;
+  }
+}
+
+/* 
+for tablets - 900px
+*/
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 78rem;
+  }
+
+  .logo-heading {
+    font-size: 3.6rem;
+  }
+
+  .hero-title {
+    font-size: 4.4rem;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    font-size: 1.4rem;
+    padding: 1.6rem 2.4rem;
+  }
+
+  .programs.selected {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    column-gap: 4.8rem;
+  }
+
+  .day-list {
+    padding: 0 2rem;
+  }
+}
+
+/* 
+for smaller tablets - 720px
+*/
+
+/* 
+for phones - 544px
+*/

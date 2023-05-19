@@ -89,6 +89,7 @@ textarea {
 
   /* calculates fixed background position relative to the viewport */
   background-attachment: fixed;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
   z-index: -1;
