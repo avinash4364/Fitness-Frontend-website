@@ -1,10 +1,15 @@
 /* Navigation header */
 
-.nav-header {
-  padding: 4.8rem 0 9.6rem 0;
-  display: flex;
-  justify-content: space-between;
+.header-navigation {
   height: 40vh;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.8rem;
+  position: relative;
 }
 
 .logo-heading {
@@ -31,7 +36,6 @@
 }
 
 .menu-links {
-  list-style: none;
   display: flex;
   gap: 1.6rem;
 }
@@ -147,6 +151,21 @@
   opacity: 1;
   transition: opacity 100ms;
   transition-delay: 0ms;
+}
+
+/* Mobile navigation */
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-mobile-nav ion-icon {
+  color: #fff;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 /* hero section */

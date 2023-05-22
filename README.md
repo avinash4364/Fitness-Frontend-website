@@ -1,7 +1,7 @@
 # Fitness
 
 - Fitness is the front-end part of a fitness plans marketing website.
-- It is currently non-responsive.
+- It is fully responsive.
 
 ### Technologies used
 

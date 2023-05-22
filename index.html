@@ -34,62 +34,70 @@
     <title>Fitness: Unlock Your Physical Potential</title>
   </head>
   <body>
-    <header class="nav-header container">
-      <a href="#"
-        ><h1 class="logo-heading">fit<span>ness</span></h1></a
-      >
+    <header class="header-navigation">
+      <div class="container nav-header">
+        <a href="#"
+          ><h1 class="logo-heading">fit<span>ness</span></h1></a
+        >
 
-      <nav class="menu">
-        <ul class="menu-links">
-          <li class="menu-link menu-link--highlight"><a href="#">home</a></li>
-          <li class="menu-link menu-link--classes">
-            <a class="sub-menu-link" href="#"
-              >classes <span class="down">&#8964;</span></a
-            >
-            <div class="sub-menu">
-              <ul>
-                <li class="menu-link"><a href="#">Strength training</a></li>
-                <li class="menu-link"><a href="#">Weightlifting</a></li>
-                <li class="menu-link"><a href="#">Calesthenics</a></li>
-                <li class="menu-link"><a href="#">Circuit training</a></li>
-              </ul>
-            </div>
-            <!-- here the filter of the svg will be used to round the corners of our submenu by applying it to its parent container -->
-            <svg
-              style="visibility: hidden; position: absolute"
-              width="0"
-              height="0"
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-            >
-              <defs>
-                <filter id="round">
-                  <feGaussianBlur
-                    in="SourceGraphic"
-                    stdDeviation="2"
-                    result="blur"
-                  ></feGaussianBlur>
-                  <feColorMatrix
-                    in="blur"
-                    mode="matrix"
-                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="goo"
-                  ></feColorMatrix>
-                  <feComposite
-                    in="SourceGraphic"
-                    in2="goo"
-                    operator="atop"
-                  ></feComposite>
-                </filter>
-              </defs>
-            </svg>
-          </li>
-          <li class="menu-link"><a href="#">schedule</a></li>
-          <li class="menu-link"><a href="#">trainers</a></li>
-          <li class="menu-link"><a href="#">about</a></li>
-          <li class="menu-link"><a href="#">contact</a></li>
-        </ul>
-      </nav>
+        <nav class="menu">
+          <ul class="menu-links">
+            <li class="menu-link menu-link--highlight"><a href="#">home</a></li>
+            <li class="menu-link menu-link--classes">
+              <a class="sub-menu-link" href="#"
+                >classes <span class="down">&#8964;</span></a
+              >
+              <div class="sub-menu">
+                <ul>
+                  <li class="menu-link"><a href="#">Strength training</a></li>
+                  <li class="menu-link"><a href="#">Weightlifting</a></li>
+                  <li class="menu-link"><a href="#">Calesthenics</a></li>
+                  <li class="menu-link"><a href="#">Circuit training</a></li>
+                </ul>
+              </div>
+              <!-- here the filter of the svg will be used to round the corners of our submenu by applying it to its parent container -->
+              <svg
+                style="visibility: hidden; position: absolute"
+                width="0"
+                height="0"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+              >
+                <defs>
+                  <filter id="round">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="2"
+                      result="blur"
+                    ></feGaussianBlur>
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                      result="goo"
+                    ></feColorMatrix>
+                    <feComposite
+                      in="SourceGraphic"
+                      in2="goo"
+                      operator="atop"
+                    ></feComposite>
+                  </filter>
+                </defs>
+              </svg>
+            </li>
+            <li class="menu-link"><a href="#">schedule</a></li>
+            <li class="menu-link"><a href="#">trainers</a></li>
+            <li class="menu-link"><a href="#">about</a></li>
+            <li class="menu-link"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile navigation -->
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
     </header>
     <main>
       <!-- hero section -->

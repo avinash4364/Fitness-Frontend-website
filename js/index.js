@@ -73,3 +73,11 @@ dayList.childNodes.forEach((day) => {
 // bgImg.forEach((img) => {
 //   observer.observe(img);
 // });
+
+// * Mobile Navigation
+const mobileBtn = document.querySelector('.btn-mobile-nav');
+const navigationHeader = document.querySelector('.header-navigation');
+
+mobileBtn.addEventListener('click', () => {
+  navigationHeader.classList.toggle('mobile');
+});
