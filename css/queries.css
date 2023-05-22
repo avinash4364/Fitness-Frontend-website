@@ -13,10 +13,6 @@ for smaller desktops - below 1280px
     padding: 8rem 0;
   }
 
-  .hero .bg-img {
-    background-position-y: -10rem;
-  }
-
   .container {
     max-width: 100rem;
   }
@@ -36,10 +32,6 @@ for smaller desktops - below 1280px
 
   .cta {
     height: 45rem;
-  }
-
-  .cta .bg-img {
-    background-position-x: right;
   }
 
   .cta-heading {
@@ -126,16 +118,12 @@ for landscape tablets - below 1080px
     height: 45rem;
   }
 
-  .bg-img-2 {
-    background-position-y: -10rem;
-  }
-
   .cta-heading {
     font-size: 5.2rem;
   }
 
-  .cta .bg-img {
-    background-position-y: center;
+  .cta {
+    height: 40rem;
   }
 
   .pricing-plans {
@@ -145,15 +133,11 @@ for landscape tablets - below 1080px
   }
 
   .post {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .post-img {
-    width: 10rem;
-  }
-
-  .gallery-img img {
-    height: 40rem;
+  .blog-grid {
+    grid-template-columns: 3fr 2fr;
   }
 
   .training .training-btn:link,
@@ -180,10 +164,6 @@ for landscape tablets - below 1080px
     font-size: 1.4rem;
   }
 
-  .hero-header {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .day-list {
     column-gap: 2.4rem;
   }
@@ -192,8 +172,13 @@ for landscape tablets - below 1080px
     padding: 1.6rem 3.2rem;
   }
 
-  .hero {
-    padding-top: 9.6rem;
+  .hero-title {
+    font-size: 4.4rem;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    font-size: 1.4rem;
   }
 }
 
@@ -206,8 +191,12 @@ for tablets - 900px
     font-size: 50%;
   }
 
+  section {
+    padding: 6.4rem 0;
+  }
+
   .container {
-    max-width: 78rem;
+    max-width: 84rem;
   }
 
   .logo-heading {
@@ -215,13 +204,7 @@ for tablets - 900px
   }
 
   .hero-title {
-    font-size: 4.4rem;
-  }
-
-  .hero-btn:link,
-  .hero-btn:visited {
-    font-size: 1.4rem;
-    padding: 1.6rem 2.4rem;
+    font-size: 3.6rem;
   }
 
   .programs.selected {
@@ -232,12 +215,226 @@ for tablets - 900px
   .day-list {
     padding: 0 2rem;
   }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bg-img-2::after {
+    font-size: 5.2rem;
+  }
+
+  .heading-desc {
+    padding-bottom: 4.8rem;
+  }
+
+  .heading-secondary {
+    padding-bottom: 2.4rem;
+  }
+
+  .gallery-grid .gallery-desc {
+    padding-bottom: 2.4rem;
+  }
+
+  .gallery-grid .gallery-heading {
+    padding-bottom: 0;
+  }
+
+  .gallery-grid {
+    row-gap: 2.4rem;
+  }
+
+  .trainer-name {
+    font-size: 3.2rem;
+  }
+
+  .trainer-program {
+    font-size: 2.4rem;
+  }
+
+  .trainer-desc {
+    font-size: 1.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .trainer-social ion-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 1.2rem;
+  }
+
+  .pricing-plans {
+    padding: 0 6.4rem;
+  }
+
+  .cta-container {
+    gap: 0;
+  }
+
+  .cta-heading {
+    font-size: 4.4rem;
+  }
+
+  .cta-text {
+    font-size: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-me .form {
+    width: 50%;
+  }
 }
 
 /* 
-for smaller tablets - 720px
+for phones - 480px
 */
 
-/* 
-for phones - 544px
-*/
+@media (max-width: 30em) {
+  .container {
+    max-width: 72rem;
+  }
+
+  .programs.selected {
+    grid-template-columns: 1fr;
+  }
+
+  .trainings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid,
+  .pricing-plans,
+  .blog-grid,
+  .hero-header,
+  .trainings-grid,
+  .post {
+    grid-template-columns: 1fr !important;
+  }
+
+  section {
+    padding: 4.4rem;
+  }
+
+  .heading-secondary {
+    padding-bottom: 1.6rem;
+  }
+
+  .heading-desc {
+    line-height: 1.3;
+    font-size: 1.8rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .gallery-grid {
+    gap: 1.6rem;
+  }
+
+  .gallery-grid .gallery-desc {
+    padding-bottom: 1.6rem;
+  }
+
+  .nav-header {
+    justify-content: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero-header {
+    text-align: center;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    justify-self: center;
+  }
+
+  .day-list .day {
+    flex-basis: 14rem;
+  }
+
+  .bg-overlay {
+    height: 40rem;
+  }
+
+  .bg-img-2::after {
+    font-size: 4.4rem;
+    width: 100%;
+  }
+
+  .cta {
+    height: 32rem;
+  }
+
+  .cta-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cta-heading {
+    font-size: 3.6rem;
+  }
+
+  .cta-text {
+    padding-bottom: 3.2rem;
+  }
+
+  .blog-heading {
+    justify-self: center;
+    padding-bottom: 2.4rem;
+  }
+
+  .blog-heading:nth-child(3) {
+    grid-row: 3;
+    grid-column: 1/-1;
+    padding-top: 2.4rem;
+  }
+
+  .events-post {
+    grid-row: 4;
+  }
+
+  .post-desc {
+    text-align: center;
+    padding-bottom: 2.4rem;
+  }
+
+  .post-footer {
+    margin: 0 auto;
+  }
+
+  .post-date {
+    flex-direction: row;
+    justify-self: center;
+    font-size: 1.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .post-date span {
+    padding: 0.8rem 0;
+  }
+
+  .footer-grid {
+    padding-left: 3.2rem;
+    padding-right: 1.6rem;
+  }
+
+  .contact-me .form {
+    width: 100%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 30rem;
+  }
+
+  .heading-tertiary {
+    padding-bottom: 2rem;
+  }
+}

@@ -47,3 +47,29 @@ dayList.childNodes.forEach((day) => {
     e.target.classList.add('clicked');
   });
 });
+
+// intersection observer for the background images
+// const bgImg = document.querySelectorAll('.bg-img');
+// const bgOverlay = document.querySelector('.bg-overlay');
+// const observer = new IntersectionObserver((entries) => {
+//   // for each entries check if the background image is intersecting with the viewport or not
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       // if it is intersecting then reduce the image background position y in negative direction by half the speed of the scrolling speed - to do that we need to fire an window scroll event
+
+//       // get the scrollheight of the current element
+//       console.log(bgOverlay.scrollTop);
+//       let scrollHeightRTV = entry.boundingClientRect.top;
+//       console.log(`scrollheight : ${scrollHeightRTV}`);
+//       window.addEventListener('scroll', () => {
+//         let scrollHeight = this.scrollY;
+//         entry.target.style.backgroundPositionY =
+//           '-' + Math.round(scrollHeight / 20) + 'rem';
+//       });
+//     }
+//   });
+// });
+
+// bgImg.forEach((img) => {
+//   observer.observe(img);
+// });
